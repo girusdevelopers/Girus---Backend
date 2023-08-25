@@ -1,0 +1,138 @@
+// //1st Task
+// function uppercase(str)
+// {
+//   const upl1 = str.split(' ');
+//   console.log(upl1);
+//   const upl2 = [];
+//   console.log(upl2);
+//   for(var x = 0; x < upl1.length; x++){
+//       upl2.push(upl1[x].charAt(0).toUpperCase()+upl1[x].slice(1));
+//   }
+//   return upl2.join(' ');
+// }
+// console.log(uppercase("the quick brown fox"));
+
+
+// //2nd task
+// function dy(datatype){
+//     console.log(typeof(datatype)); 
+// }
+// let datatype='hi';
+// dy(datatype);
+
+
+// // 3rd task
+// function dt() {
+//     const cDate = new Date();
+//     const day = String(cDate.getDate());
+//     const month = String(cDate.getMonth());
+//     const year = cDate.getFullYear();
+//     const hours = String(cDate.getHours());
+//     const minutes = String(cDate.getMinutes());
+  
+//     const formattedDateTime =  day+"/"+month+"/"+year+" "+hours+":"+minutes
+//     return formattedDateTime;t
+//   }
+//   const cDT = dt();
+//   console.log(cDT);
+//   console.log(typeof(cDT));
+
+
+//4th task
+
+// function sum(...numbers) {
+//     return numbers.reduce((total, num) => total + num);
+//   } 
+//   const result = sum(40, 10, 15, 40);
+//   console.log(result);
+
+
+//   function func() {
+//     console.log(arguments);
+//     let sum = 0
+//     for (let i = 0; i < arguments.length; i++) {
+//       sum += arguments[i];
+//     }
+//     console.log(sum)
+//     return sum;
+//   }
+//   func(5,6,7,8)
+
+// function sum(...numbers) {
+//     let total = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//       total += numbers[i];
+//     }
+//     return total;
+//   }
+  
+//   const result = sum(5, 10, 15);
+//   console.log(result);
+
+
+// //5th task
+// function days(age){
+//     return age*365;
+// }
+// console.log(days(25));
+
+
+// //1st task array
+// const a=['hi','hello'];
+// const b=['how','are','you'];
+// const c=a.concat(b);
+// console.log(c);
+
+
+        // 2nd task remove element
+// const a=['hi','dello','how','are','you'];
+// const aa=a.filter(a=> a!=="how");
+// console.log(aa);
+
+
+//      // 3rd task sort
+// const a=['hi','dello','how','are','you'];
+// const aa=a.sort();
+// console.log(aa);
+
+
+// const numbersOne = [1, 2, 3];
+// const numbersTwo = [4, 5, 6];
+// const numbersCombined = [...numbersOne, ...numbersTwo];
+// console.log(numbersCombined);
+
+
+
+// //spread operator with objects. 
+// const tw={
+//     name:'bike',
+//     model:2014,
+//     cc:150
+// }
+// const fw={
+//     name:'Car',
+//     model:2025,
+//     cc:1050
+// }
+// const vehicles= {...tw, ...fw}
+// console.log(vehicles);
+
+    //4th task cloned 
+// const val = [1, 20, 'hi'];
+// const cloneval = [...val];
+// console.log(cloneval);
+
+
+
+// const value=['aa','bb','cc','dd','aa','cc','ee','ff','gg','hh'];
+// const fil=value.filter(value=> value=! "aa" );
+// console.log(fil);
+
+
+//5th task
+function duplicate(rr){
+    let rj = [...new Set(rr)];
+    console.log(rj);
+}
+const arr = [1, 2, 3, 2, 3,'aa','dd','aa','ff','hh','hh',2,3,1,2,3];
+duplicate(arr);
